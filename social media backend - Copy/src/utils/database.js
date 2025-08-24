@@ -98,9 +98,9 @@ const initializePool = () => {
 			pool = new Pool({
 				connectionString: process.env.DATABASE_URL,
 				ssl: { rejectUnauthorized: false }, // required on Render
-				max: 20,
-				idleTimeoutMillis: 30000,
-				connectionTimeoutMillis: 2000,
+				// max: 20,
+				// idleTimeoutMillis: 30000,
+				// connectionTimeoutMillis: 2000,
 			});
 		} else {
 			// Local development
